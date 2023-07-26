@@ -1,0 +1,30 @@
+---
+import Nav from "./Nav.astro";
+---
+
+<div class="header">
+  <div class="overlay">
+    <Nav />
+  </div>
+</div>
+
+<style>
+  .header {
+    background-image: url("/public/img/header.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 22, 33, 0.8);
+  }
+</style>
